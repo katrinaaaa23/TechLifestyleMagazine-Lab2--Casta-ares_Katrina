@@ -1,0 +1,441 @@
+/* Importing Google Fonts for typography */
+@import url('');
+
+/* 2.1 - Advanced Selectors and Page Structure */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa
+}
+
+h1, h2, h3 {
+    font-family: "Palyfair Display", serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+a: hover {
+    color: #004080
+}
+
+#site-header {
+    background-color: #ffffff;
+    border-bottom: 5px solid red;
+    padding: 2opx;
+}
+
+#site-footer {
+    background-color: #008B8B ;
+    color:  white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:  hover{
+    background-color: #ffcccb;
+    color: white;
+    border-radius: 5px;
+}
+
+.articles > .article-card {
+    margin-bottom: 20px;
+}
+
+.lifestyle > .lifestyle-card {
+    margin-bottom: 20px;
+}
+
+.tech > .tech-card {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* 2.2 - Colors, Backgrounds, and Layout Styling */
+.hero {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+}
+
+header nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.article-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.article-card: :hover{
+    transform: scale(1, 1.0);
+}
+
+.lifestyle-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.lifestyle-card: :hover{
+    transform: scale(1, 1.0);
+}
+
+.tech-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.newsletter {
+    background-color: #f0f8ff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #555;
+}
+
+/* 2.3 - Typography & Text Effects */
+.hero h1 {
+    font-size: 'Playfair', serif;
+    text-transform: 2.5rem;
+    letter-spacing: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-style: italic;
+    line-height: 1.8;
+    font-size: ;1.1rem
+}
+
+.article-card h3::before {
+    content: "*";
+    color: gold;
+}
+
+.article-card h3 {
+    transition: color 0.3s ease;
+}
+
+.article-card:hover h3 {
+    color: #0066cc;
+}
+
+.lifestyle-card h3::before {
+    content: "*";
+    color: gold;
+}
+
+.lifestyle-card h3 {
+    transition: color 0.3s ease;
+}
+
+.lifestyle-card:hover h3 {
+    color: #0066cc;
+}
+
+.tech-card h3::before {
+    content: "*";
+    color: gold;
+}
+
+.tech-card h3 {
+    transition: color 0.3s ease;
+}
+
+.tech-card:hover h3 {
+    color: #0066cc;
+}
+.newsletter h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.newsletter h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+/* 2.4 - Homepage Styling */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.article-card {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 2.5 - Adding Images & Media Styling */
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.article-card img: hover{
+    transform: scale(1,05);
+}
+
+.hero {
+    background-image: ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* 2.6 - Multi-Page Navigation (Articles Page) */
+.article-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-item img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.article-item img:hover {
+    transform: scale(1.05);
+}
+
+.article-content {
+    flex: 1;
+}
+
+/* 2.7 - Homepage Styling */
+.lifestyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+/* 2.8 - Multi-Page Navigation (Lifestyle Page) */
+.lifestyle-card {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 2.9 - Adding Images & Media Styling */
+.lifestyle-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.lifestyle-card img: hover{
+    transform: scale(1,05);
+}
+
+.lifestyle-content {
+    flex: 1;
+}
+
+
+/* 2.7 - Homepage Styling */
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+
+/* 2.11 - Multi-Page Navigation (Tech Page) */
+.tech-card {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 2.12 - Adding Images & Media Styling */
+.tech-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.tech-card img: hover{
+    transform: scale(1,05);
+}
+
+.tech-content {
+    flex: 1;
+}
+
+/* 2.13 - Multi-Page Navigation (Tech Page) */
+.tech-card {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 2.13 - Multi-Page Navigation (Contact Page) */
+.contact-card {
+    flex: 1;
+    min-width: 280px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .article-card {
+        flex: 1;
+    }
+
+    .article-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
